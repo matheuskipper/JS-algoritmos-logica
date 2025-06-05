@@ -1,20 +1,25 @@
-const frm = document.getElementById("formulario")
-const resp = document.getElementById("resultado")
+const form = document.getElementById("formulario")
+const result = document.getElementById("resultado")
 
-frm.addEventListener("submit", (e) => {
-    const senha = document.getElementById("inSenha")
-    const confirmaSenha = document.getElementById("inConfirmaSenha")
-    const validacao = () => {
-        if(senha.value != confirmaSenha.value){
-            resp.innerText = "As senhas não são iguais!"
-        } else if (senha.value == "" || confirmaSenha.value == "") {
-            resp.innerText = "Preencha os campos!"
-        } else {
-            resp.innerText = "As senhas são iguais!"
-        }
-    } 
-    validacao();
-    e.preventDefault()  
-    console.log(senha.value, confirmaSenha.value);
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const password = document.getElementById('inPassword')
+    const password2 = document.getElementById('inConfirmPassord')
+
+    if (password.value != password2.value) {
+        result.innerText = 'as senhas não conferem!'
+    } else if (password.value.length > 6 && password2.value.length > 6) {
+        result.innerText = 'a senha deve ter 6 caracteres'
+
+    } else {
+        result.innerText = 'as senhas estao iguais!'
+    }
+
+    if (password.value == "" || password2.value == "") {
+        result.innerText = 'Preencha a senha'
+    }
+
+    console.log(password.value, password2.value);
     
 })
