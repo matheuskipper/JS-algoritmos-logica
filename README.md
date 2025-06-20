@@ -7,9 +7,11 @@ Este repositório contém a implementação prática dos conceitos e exercícios
 - Praticar estruturas básicas de programação (variáveis, condicionais, laços, funções, etc).
 - Resolver problemas de lógica por meio da linguagem JavaScript.
 - Aprofundar o entendimento sobre algoritmos aplicando os conteúdos em pequenos programas e desafios.
+  <br>
 
-  ![image](https://github.com/user-attachments/assets/3f0a00b6-e729-4a1a-b151-bfe3ebe58804)
+ <img src="https://github.com/user-attachments/assets/3f0a00b6-e729-4a1a-b151-bfe3ebe58804" style="width: 300px; height: auto;" />
 
+<br>
 
 ## 📚 Base Teórica
 
