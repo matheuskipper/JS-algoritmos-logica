@@ -25,7 +25,7 @@ frm.addEventListener("submit", (e) => {
     result2.innerText = `A  média do aluno foi: ${mediaNotas.toFixed(
       1
     )} - Atenção, o aluno está em recuperação!`;
-    result2.style.color = "yellow";
+    result2.style.color = "orange";
   } else {
     result1.innerText = `Aluno: ${nome}`;
     result2.innerText = `A média do aluno foi: ${mediaNotas.toFixed(
