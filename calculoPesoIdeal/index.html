@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <title>Document</title>
-</head>
-<style>
-    img{
-        float: left;
-        width: 200px;
-        height: 200px;
-        margin-right: 20px;
+  </head>
+  <style>
+    img {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin-right: 20px;
     }
-</style>
-<body>
-    <img src="./images/imagemBalanca.jpg" alt="imagem balança ilustrativa">
+    h2 {
+      border-bottom-style: inset;
+    }
+  </style>
+  <body>
+    <img src="./images/imagemBalanca.jpg" alt="imagem balança ilustrativa" />
     <h2>Programa Cálculo de Peso Ideal</h2>
     <form id="formulario">
-        <p>Nome:
-            <input type="text" id="inNome" placeholder="Insira seu nome">
-        </p>
-        <p>Sexo:
-            <!-- <label for="inMasculino">Masculino</label> -->
-            <input type="radio" name="sexo" value="masculino" id="inMasculino">Masculino
-            <!-- <label for="inFeminino">Feminino</label> -->
-            <input type="radio" name="sexo" value="feminino" id="inFeminino">Feminino
-        </p>
-        <p>Altura (Em metros, ex: 1.70):
-            <input type="number" step="0.01" name="altura" id="inAltura" placeholder="ex: 1.70">
-        </p>
-        <input type="submit" value="Calcular seu peso ideal">
+      <p>
+        Nome:
+        <input type="text" id="inNome" placeholder="Insira seu nome" />
+      </p>
+      <p>
+        Sexo:
+        <!-- <label for="inMasculino">Masculino</label> -->
+        <input
+          type="radio"
+          name="sexo"
+          value="masculino"
+          id="inMasculino"
+        />Masculino
+        <!-- <label for="inFeminino">Feminino</label> -->
+        <input
+          type="radio"
+          name="sexo"
+          value="feminino"
+          id="inFeminino"
+        />Feminino
+      </p>
+      <p>
+        Altura (Em metros, ex: 1.70):
+        <input
+          type="number"
+          step="0.01"
+          name="altura"
+          id="inAltura"
+          placeholder="ex: 1.70"
+        />
+      </p>
+      <input type="submit" value="Calcular seu peso ideal" />
     </form>
     <h3 id="resultado"></h3>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
